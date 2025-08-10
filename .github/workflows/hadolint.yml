@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Run Hadolint Action
-        uses: hadolint/hadolint-action@v1.6.0
+        uses: hadolint/hadolint-action@v3.1.0
         with:
           dockerfile: Dockerfile
